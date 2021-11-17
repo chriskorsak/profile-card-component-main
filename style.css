@@ -22,7 +22,7 @@
 
 body {
   background: url('images/bg-pattern-top.svg') no-repeat, url('images/bg-pattern-bottom.svg') no-repeat;
-  background-position: -95vh -45vh, 20vh 40vh;
+  background-position: right 25vh bottom 30vh, left 25vh top 30vh;
   background-color: var(--primary-1);
   font-family: 'Kumbh Sans', sans-serif;
 }
@@ -47,7 +47,7 @@ section.card {
   border-radius: 100%;
   border: 5px solid #fff;
   margin-top: 5.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 p {
@@ -55,7 +55,7 @@ p {
 }
 
 h1.name {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--primary-2)
 }
 
@@ -67,15 +67,20 @@ h1.name {
 }
 
 .city {
-  margin: 1rem 0 2rem 0;
+  margin: .7rem 0 1.5rem 0;
+}
+
+hr {
+  opacity: .5;
 }
 
 .platform-stats {
-  margin: 2rem 0;
+  margin: 1.5rem .5rem;
 }
 
 .p-number {
   color: var(--primary-2);
+  font-size: 1.2rem;
 }
 .p-type {
   font-size: .7rem;
@@ -95,8 +100,21 @@ h1.name {
 }
 
 @media (min-width: 768px) {
-  section.card {
-    min-width: 375px;
-    width: 40%;
+  body {
+    background-position: right 60vh bottom 50vh, left 60vh top 50vh;
   }
+  section.card {
+    min-width: 350px;
+    width: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-position: right 85vh bottom 50vh, left 85vh top 50vh;
+  }
+  section.card {
+    width: 24%;
+  }
+
 }
